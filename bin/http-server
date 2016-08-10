@@ -122,6 +122,9 @@ function listen(port) {
     options.fallback = {
       address: argv.f || argv.fallback
     };
+    if (options.fallback.address === true) {
+      options.fallback.address = options.root;
+    }
   }
 
   var server = httpServer.createServer(options);
