@@ -49,7 +49,7 @@ var port = argv.p || parseInt(process.env.PORT, 10),
     ssl = !!argv.S || !!argv.ssl,
     proxy = argv.P || argv.proxy,
     utc = argv.U || argv.utc,
-    fallback = argv.f || argv.feedback,
+    fallback = argv.f || argv.fallback,
     logger;
 
 if (!argv.s && !argv.silent) {
